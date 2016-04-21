@@ -1,22 +1,17 @@
-name: SpawnPort
-main: SpawnPort\SpawnPort
+name: BackToSpawn
+main: BackToSpawn/Main
 version: 1.0
 api: [1.12.0]
+author: Syntaxious
 
 load: POSTWORLD
-author: [ecoron, LittleRon]
-description: teleport player to worldspawn
-website: https://github.com/ecoron/SpawnPort
+description: teleport player to spawn
 commands:
- spawnport:
-  description: Teleport player to worldspawn
-  usage: "/spawn"
-  aliases: [spawn, spawnport]
-  permission: spawnport.command
+ backtospawn:
+  description: Teleport player to spawn
+  usage: "/s"
+  permission: backtospawn.cmd
 permissions:
- spawnport.command:
-  description: "Allows the user to teleport to worldspawn"
+ backtospawn.cmd:
+  description: "Allows the user to teleport to spawn"
   default: true
- spawnport.bypass:
-  description: "Allows to have admin features"
-  default: op
