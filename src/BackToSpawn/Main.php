@@ -8,7 +8,7 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
-class SpawnPort extends PluginBase{
+class BackToSpawn extends PluginBase{
 
     public function onEnable(){
         $this->getLogger()->info("[BackToSpawn] enabled")
