@@ -19,7 +19,7 @@ class BackToSpawn extends PluginBase{
     }
     
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-        if(strtolower($command->getName()) === "s"){
+        if(strtolower($command->getName()) === "spawn"){
             if(!($sender instanceof Player)){
                 $sender->sendMessage(TextFormat::RED."Please run this command in game");
                 return true;
