@@ -1,2 +1,4 @@
 # BackToSpawn
-Use command /s to teleport back to spawn!
+Execute command /spawn to teleport back to spawn!
+
+PocketMine Plugin.
