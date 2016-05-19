@@ -1,15 +1,15 @@
 name: BackToSpawn
 main: BackToSpawn/Main
-version: 1.0
+version: 1.0.1
+description: Pointless plugin that lets you teleport back to spawn/s
 api: [1.12.0]
-author: Syntaxious
+authors: ["Syntaxious", "XFuryMCPE"]
 
-load: POSTWORLD
-description: teleport player to spawn
 commands:
- backtospawn:
+ spawn:
   description: Teleport player to spawn
-  usage: "/s"
+  usage: /spawn <default:here>
+  aliases: [s]
   permission: backtospawn.cmd
 permissions:
  backtospawn.cmd:
