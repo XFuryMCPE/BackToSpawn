@@ -11,15 +11,15 @@ use pocketmine\utils\TextFormat;
 class BackToSpawn extends PluginBase{
 
     public function onEnable(){
-        $this->getLogger()->info("[BackToSpawn] enabled")
+        $this->getLogger()->info("[BackToSpawn] enabled");
     }
     
     public function onDisable(){
-        $this->getLogger()->info("[BackToSpawn] enabled")
+        $this->getLogger()->info("[BackToSpawn] enabled");
     }
     
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-        if(strtolower($command->getName()) === "spawn"){
+        if($command->getName() === "spawn"){
             if(!($sender instanceof Player)){
                 $sender->sendMessage(TextFormat::RED."Please run this command in game");
                 return true;
